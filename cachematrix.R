@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## These function cache a matrix in the global environment so that they can be retrieved at a later point without using so much of the cpu.
 
-## Write a short comment describing this function
+## This function creates a vector in which to cache the new matrix inversion
 
 makeCacheMatrix <- function(x = matrix()) {
       mat_inv <- NULL
@@ -16,7 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## this function takes the matrix and inverts it, then stores it in the previous vector.
 
 cacheSolve <- function(x, ...) {
         mat_inv <- x$getinv()
